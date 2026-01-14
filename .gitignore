@@ -1,0 +1,6 @@
+# 忽略 Obsidian 的配置文件夹
+.obsidian/
+
+# 忽略其他常见的不需要提交的文件
+*.log
+tmp/
