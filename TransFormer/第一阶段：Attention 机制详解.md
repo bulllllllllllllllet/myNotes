@@ -21,7 +21,6 @@ Transformer 的核心在于 **Self-Attention (自注意力机制)**。想象你�
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
-
 1.  **$QK^T$**: 矩阵乘法。计算 Query 和 Key 的相似度。
 2.  **$/ \sqrt{d_k}$**: 缩放。防止点积结果过大导致 Softmax 梯度消失（梯度变小，学习变慢）。
 3.  **Softmax**: 归一化。把相似度变成概率（权重），所有权重加起来等于 1。
