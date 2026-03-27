@@ -7,7 +7,7 @@
 请按照以下顺序阅读和实践学习文档：
 
 ### 阶段一：CUDA 基础与核心概念
-* [📄 01_CUDA_Core_Concepts.md](./01_CUDA_Core_Concepts.md)
+* [📄 01_CUDA核心概念](./01_CUDA_Core_Concepts.md)
   * 内容：Warp 调度机制、Shared Memory (共享内存) 深度剖析、Bank Conflict (存储体冲突) 规避指南。
 
 ### 阶段二：CUDA 算子手撕与优化
