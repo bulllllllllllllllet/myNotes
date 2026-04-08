@@ -16,8 +16,8 @@ Step 4 - 性能测试 benchmark
 
 参考官方教程：
 https://triton-lang.org/main/getting-started/tutorials/01-vector-add.html#sphx-glr-getting-started-tutorials-01-vector-add-py
-"""
 
+```python
 import torch
 import triton
 import triton.language as tl
@@ -170,3 +170,7 @@ if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1 and sys.argv[1] == "--benchmark":
         benchmark.run(save_path='.', print_data=False)
+```
+```
+```
+

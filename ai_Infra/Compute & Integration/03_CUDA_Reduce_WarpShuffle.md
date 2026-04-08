@@ -13,13 +13,14 @@
 
 * **什么是 Warp Shuffle？** 从 Kepler 架构开始引入的硬件级指令。允许**同一个 Warp 内的 32 个线程直接读取彼此的寄存器数据**，完全不需要经过 Shared Memory，也不需要 `__syncthreads()`。
 * **核心指令 `__shfl_down_sync`：**
-  ```cpp
+```python
   // 伪代码：向高 ID 线程借数据
   float val = ...;
   for (int offset = 16; offset > 0; offset /= 2) {
       val += __shfl_down_sync(0xffffffff, val, offset);
   }
   // 最终，线程 0 的 val 将包含整个 Warp 的和。
+```
 
 
 **实现 Block 级 Reduce：**
